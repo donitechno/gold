@@ -8,4 +8,4 @@ script:
   - python main.py
 deploy:
   provider: heroku
-  ap_key: b6c215f7-c617-4b7c-b0fd-0c348f836dc9
+  api_key: b6c215f7-c617-4b7c-b0fd-0c348f836dc9
