@@ -20,6 +20,10 @@ HTML = """
 </html>
 """
 
+HTML2="""
+    <h1> travis first</h1>
+"""
+
 #  We have to disale this i pyllint, because pylint will fail our build every
 #  time it encounters this "global" variable
 app = Flask(__name__) # pylint: disable=invalid-name
@@ -30,6 +34,10 @@ def home():
     """ Main route to the web app
     """
     return HTML
+
+@app.route('/about')
+def about():
+    return HTML2
 
 if __name__ == '__main__':
     app.run()
