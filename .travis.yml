@@ -4,7 +4,18 @@ python:
 cache: pip
 install:
   - pip install -r requirements.txt
+  - pip install codecov
 
+script:
+  - python -m unittest discover
+  - behave
+  - coverage erase
+  - coverage run test_webapp.py && coverage html
+  - pylint --output-format=text main.py
+
+after_success:
+  - codecov
+  
 deploy:
   provider: heroku  
   app : gold5
