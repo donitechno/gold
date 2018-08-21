@@ -4,8 +4,7 @@ python:
 cache: pip
 install:
   - pip install -r requirements.txt
-script:
-  - python main.py
+script:  
 deploy:
   provider: heroku  
   app : gold5
