@@ -8,5 +8,6 @@ script:
   - python main.py
 deploy:
   provider: heroku  
+  app : gold5
   api_key: 
     secure: "f1af6cbb-4616-4964-b455-a4f1af3fb1ae"
