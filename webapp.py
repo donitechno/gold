@@ -20,7 +20,7 @@ HTML = """
 </html>
 """
 
-HTML2="""
+HTML2 = """
     <h1> travis first</h1>
 """
 
